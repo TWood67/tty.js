@@ -9,20 +9,6 @@ For the standalone web terminal, see
 For the lowlevel terminal spawner, see
 [**pty.js**](https://github.com/chjj/pty.js).
 
-## Screenshots
-
-### irssi
-
-![](http://i.imgur.com/wqare.png)
-
-### vim & alsamixer
-
-![](http://i.imgur.com/Zg1Jq.png)
-
-### bash
-
-![](http://i.imgur.com/HimZb.png)
-
 ## Features
 
 - Tabs, Stacking Windows, Maximizable Terminals
@@ -74,6 +60,7 @@ JSON file. An example configuration file looks like:
     "key": "./server.key",
     "cert": "./server.crt"
   },
+  "shellAuth": true,
   "port": 8080,
   "hostname": "127.0.0.1",
   "shell": "sh",
@@ -119,6 +106,11 @@ JSON file. An example configuration file looks like:
 ```
 
 Usernames and passwords can be plaintext or sha1 hashes.
+
+### ShellAuth
+This feature allows you to have access to the username and password entered
+by the end user during authentication. This is useful if you want authentication
+to be performed by the shell command.
 
 ### 256 colors
 
